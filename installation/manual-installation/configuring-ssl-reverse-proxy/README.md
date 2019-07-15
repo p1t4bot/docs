@@ -121,6 +121,7 @@ ErrorLog /var/log/chat.domain.com_error.log
 TransferLog /var/log/chat.domain.com_access.log
 LogLevel info
 SSLEngine On
+SSLProtocol -all +TLSv1.2 #for Websockets on iOS
 SSLCertificateFile /etc/ssl/certs/chat.domain.com.crt
 SSLCertificateKeyFile /etc/ssl/private/chat.domain.com.key
 SSLCertificateChainFile /etc/ssl/certs/intermediate.ca.pem
